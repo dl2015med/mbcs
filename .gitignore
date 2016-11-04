@@ -24,13 +24,12 @@
 # Managed by Composer
 /app/bootstrap.php.cache
 /var/bootstrap.php.cache
-/bin/*
+/bin/
 !bin/console
 !bin/symfony_requirements
 /vendor/
 
 # Assets and user uploads
-/web/bundles/
 /web/uploads/
 
 # Assets managed by Bower
@@ -50,7 +49,9 @@
 */Entity/*~
 
 # ide ingnore
-/.settings/
-.classpath
 /.idea/
 /app/.htaccess
+composer.lock
+tests/
+
+/web/

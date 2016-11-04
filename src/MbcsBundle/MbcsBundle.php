@@ -1,9 +1,9 @@
 <?php
 
-namespace AppBundle;
+namespace MbcsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class AppBundle extends Bundle
+class MbcsBundle extends Bundle
 {
 }
