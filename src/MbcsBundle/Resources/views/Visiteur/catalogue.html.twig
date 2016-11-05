@@ -3,9 +3,9 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    {% stylesheets 'css/catalogue.css' filter='cssrewrite' %}
-        <link rel="stylesheet" href="{{ asset_url }}" />
-    {% endstylesheets %}
+    {#{% stylesheets 'css/catalogue.css' filter='cssrewrite' %}#}
+        <link rel="stylesheet" href="{{ asset('css/catalogue.css') }}" />
+    {#{% endstylesheets %}#}
 {% endblock %}
 
 

@@ -12,15 +12,9 @@
         <title>{% block title %}MBCS{% endblock %}</title>
 
 
-
-
         {% block stylesheets %}
-        {% stylesheets
-            'css/bootstrap.min.css'
-            'css/base.css'
-            filter='cssrewrite' %}
-            <link rel="stylesheet" href="{{ asset_url }}" />
-        {% endstylesheets %}
+            <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/base.css') }}" rel="stylesheet" />
         {% endblock %}
 
     </head>
@@ -42,15 +36,10 @@
         {% endblock %}
     </div>
 
-
     {% block javascripts %}
-        {% javascripts
-            'js/jquery.min.js'
-            'js/bootstrap.min.js' %}
-            <script src="{{ asset_url }}"></script>
-        {% endjavascripts %}
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
     {% endblock %}
-
 
 </body>
 </html>
