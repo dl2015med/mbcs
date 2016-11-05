@@ -24,10 +24,13 @@
 
     <label for="annee">Année max.:</label>
     <select class="form-control" id="annee">
-        <option>2016</option><option>2015</option><option>2014</option><option>2013</option>
-        <option>2012</option><option>2011</option><option>2010</option><option>2009</option>
-        <option>2008</option><option>2005</option><option>2004</option><option>2003</option>
-        <option>2002</option><option>2001</option><option>2000</option>
+        {% for i in 2000..2016  %}
+        <option>{{ i }}</option>
+        {% endfor %}
+        {#<option>2016</option><option>2015</option><option>2014</option><option>2013</option>#}
+        {#<option>2012</option><option>2011</option><option>2010</option><option>2009</option>#}
+        {#<option>2008</option><option>2005</option><option>2004</option><option>2003</option>#}
+        {#<option>2002</option><option>2001</option><option>2000</option>#}
     </select>
 
     <label for="kilo">Kilométrage max.:</label>

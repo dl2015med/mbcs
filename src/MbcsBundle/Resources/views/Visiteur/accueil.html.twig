@@ -2,9 +2,10 @@
 
 
 {% block stylesheets %}
-	{#{% stylesheets 'css/accueil.css' filter='cssrewrite' %}#}
+	{% stylesheets 'css/accueil.css' filter='cssrewrite' %}
 		{{ parent() }}
-        <link href="{{ asset('css/accueil.css') }}" rel="stylesheet"  />
+        <link href="{{ asset_url }}" rel="stylesheet"  />
+    {% endstylesheets %}
 {% endblock %}
 
 
